@@ -1,0 +1,14 @@
+{
+  "name": "chintan-naik-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site with Vercel serverless backend for contact form",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "resend": "^3.4.0"
+  }
+}

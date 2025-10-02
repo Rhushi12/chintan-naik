@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-20 w-full bg-background-light/80 backdrop-blur-sm dark:bg-background-dark/80">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-4">
+<div class="h-8 w-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">WealthWise</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#home">Home</a>
+<a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#about">About</a>
+<a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#services">Services</a>
+<a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#contact">Contact</a>
+<button data-scroll="#contact" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="truncate">Book Consultation</span>
+</button>
+</nav>
+<button id="mobileMenuButton" class="md:hidden">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</header>
+<div id="mobileMenu" class="md:hidden hidden border-t border-zinc-200 bg-background-light dark:border-zinc-800 dark:bg-background-dark">
+  <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col gap-3">
+    <a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#home">Home</a>
+    <a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#about">About</a>
+    <a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#services">Services</a>
+    <a class="text-sm font-medium text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="#contact">Contact</a>
+    <button data-scroll="#contact" class="w-full rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white hover:bg-primary/90">Book Consultation</button>
+  </div>
+</div>
+<main class="flex-1">
+<section id="home" class="relative">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBo3lRfdQ4K82bSNSO4OWpua0EfAfd-mP7m2iDPQVHElt6GVdg82tZj01tnvZZZrnuPMfY9mcMVJEaCRdbmdcXeEYHAHN40wwZG_YTYmBF3zdOGEZJwDX_nRYy1PS_ls0-ltCUZkExhEUF827nBcFb-DNoBCAq-AVqwb_6meDVhG5CCL44-9qinQE6ctzSswJsa3bUDzU5mARl0Ltbg5kHhdHGO7QXiHs0bjMoG23ZeoOVc-1NKTvHEcjXLEqfE4b2GrRIC0SlCorw");'></div>
+<div class="absolute inset-0 bg-zinc-900/50"></div>
+<div class="relative mx-auto max-w-5xl px-4 py-32 text-center text-white sm:px-6 lg:px-8">
+<h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Secure Your Financial Future with Expert Guidance</h1>
+<p class="mx-auto mt-6 max-w-2xl text-lg">At WealthWise, we provide personalized financial planning and investment management services to help you achieve your financial goals. Our team of experienced advisors is dedicated to your success.</p>
+<div class="mt-10">
+<button data-scroll="#contact" class="rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">Book Consultation</button>
+</div>
+</div>
+</section>
+<div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+<div class="space-y-16">
+<section id="about">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">About Us</h2>
+<p class="mx-auto mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-400">WealthWise is a leading financial advisory firm committed to providing comprehensive financial solutions tailored to your unique needs. With a team of certified financial planners and investment experts, we offer personalized guidance to help you navigate the complexities of financial planning and achieve your long-term objectives. Our client-centric approach ensures that your financial well-being is our top priority.</p>
+</div>
+</section>
+<section id="services">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">Our Services</h2>
+</div>
+<div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-full overflow-hidden rounded-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAg27mcXXHh8KLXm1nANTWMaF5eIq-bA_xr-BTd9rMiDrRnZjYmQgCtZgGOfizpdAqKUQmecx4g_cc7h3L9ZPb2g-yPw2JxG8qVy8KgEj3PvtF8tm6W9Bwm4udjKIcE66lixrkREKfgCSnBL4uUZy8Y6lwJGc9_zwFyKmp8EuyXVbQFGRjWKHVUDxORd2FfmiW3Sh7nkqHar_mASwECPJUT0ZLAAyeeESzst7TRszW0SZ8e5EUpWR01hhT5ih3xr4cOvReuYDRvIn8");'></div>
+</div>
+<h3 class="mt-4 text-lg font-bold text-zinc-900 dark:text-white">Financial Planning</h3>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Comprehensive financial planning to help you achieve your goals.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-full overflow-hidden rounded-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-wkoXyk31IogTOSe-c2OArnzrePh-dWJdqprlon_cFfF8NKHa-xQWR3kMseHy_r8NZt_mnQWAmh6xwBRKg8ZKPBLd8hWhj2hIgz8mw7wqbeFuu4tvGGre2lxBYKApEBTeuNldsN2ZLLkU3oAG4cdWr3aW-HfOWBiXBdiFugZtf0huVF6u9syAMmp0jccqDJ9jofDIxBdS4j1cNCHU5kqH_ChtLB3UbcA79ea9Af5ZvnD2OA-iH8FhvVvNaTG7Erv0Vg2GR9S7eeg");'></div>
+</div>
+<h3 class="mt-4 text-lg font-bold text-zinc-900 dark:text-white">Investment Management</h3>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Expert investment management to maximize your returns.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-full overflow-hidden rounded-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7Li5DDM8p9v9i4N8HpLv7cnt5g0QekAeSl4_TnL-gJdXof3HP-NWMs1KbeKHAMR4OJWecog2o6e2yGupBUnOvcnlNPTNsFVPx7Obj-zzFX2VvnayYeLtSJwOJ95AUX6RXO-Bnnwo06cAx1x_5Pi6u0s4w-98l3_9PeDyvyddMPorrctNmOHqmhpYvNlHVNwyIFRVu8lsAcKaFyyRSMhAFupNalHdWMBRyCYjBTUMDEGdGrEOi5gw4NyZfVv5MYZKdqe2H2tDNXRU");'></div>
+</div>
+<h3 class="mt-4 text-lg font-bold text-zinc-900 dark:text-white">Retirement Planning</h3>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Secure your future with our tailored retirement planning services.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-40 w-full overflow-hidden rounded-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGMhycWn__AXFu4LtUtsmcIfKweRjX7HVJ5Fb1VaQZD5LJT_uTJlYTPJfXKe6MP94qIEz9DsB04UTMz73XZLAc_0m6biEmrfwUD7qipvxNwZ87WV1JyfbXE0YdQPWOr0dUoPS_i1xIG-ZEAwbTXgujO_0IFJuCrkjrhqbj4qzENoAWsDdxMQxUv1BjIrf_H0akgbkqC4VAvi33Z4I5B5L1q819O-5K1H_MRWSIQdVY1LiX-mdpjNWMkYdn_LGG0vDMpeRDOzE8Q8Q");'></div>
+</div>
+<h3 class="mt-4 text-lg font-bold text-zinc-900 dark:text-white">Estate Planning</h3>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Plan for the future with our comprehensive estate planning solutions.</p>
+</div>
+</div>
+</section>
+<section id="testimonials">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">Client Testimonials</h2>
+</div>
+<div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-background-dark">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1ymYibrLp4SkwC_-rah6PmWMhziPh3fZkRiFyWd690mIonNVdB17EbBgC1fTOL-J0PrVbTM8Sp82ndZZ_QA85DItdSE8G0pmGWJi9hVsEUeU5yIErh6ClLjzmsV64HHY45QkcemujaYGi_xby7DK7LSJzwbl7BUla2Uz57BwNVJxhOGQMzeO490cwZfDMGzBLoqAD4hZ2NF-cjoKct3WnqJ-Yhw2wQ9WEIvUP10f-4IL0D0RaTMBHSVrd9fZgz6bV6BtiUGhiiFc");'></div>
+<div>
+<p class="font-bold text-zinc-900 dark:text-white">Sarah Johnson</p>
+<div class="flex items-center">
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<p class="mt-4 text-zinc-600 dark:text-zinc-400">â€œWealthWise has been instrumental in helping me achieve my financial goals. Their personalized approach and expert advice have made a significant difference in my financial well-being.â€</p>
+</div>
+<div class="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-background-dark">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKjesnw9ZmmxVEgLzETMPzx4dsTPneWuF7SOtF9zmIbi99X3SRRAKw1i7FLNzEX6bGzjv8y21XO143hNhVW0vz0J58V85eFkf716PGGsz4wzAqbpfco8zhygpJSCaoeDeMAvB__ZPNrU6tjNlBlJrQW6WjRTcGlkaF5aWo7-aUITTOnfHhv8vaETIsVcq4di3QTaCvnhm0jb2Kf3O4mBOzdWuYZs9K_GQtUsj7DRsgYrZdBqqvSA8W3ueSLDdPSme5RDY3o9PQXs8");'></div>
+<div>
+<p class="font-bold text-zinc-900 dark:text-white">Michael Chen</p>
+<div class="flex items-center">
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<p class="mt-4 text-zinc-600 dark:text-zinc-400">â€œI highly recommend WealthWise for their professional and reliable financial services. Their team is knowledgeable and truly cares about their clients' success.â€</p>
+</div>
+<div class="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-background-dark">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmC2tYUANCzWPPp4bOVDms9RlCzt-DoX6-uMCVAymWNrtnnwSSc7TAmZ9QlrhOe0VYb_MRSHIIqrcTTgAkeB5yAPQxYJ81zDmezj-zurIVRjctaXgohffyVEtfAKzr-TU7p-luJUhea3aXxtcpZGqaL36krM2Yv8fmF3Zj9BzekEsvfgtHQHB4tmUVdd7zNMek_4xW4PHcA--VuvAYtRi8zFMqqancYEaeby7z6cIoolbFeC1xlHy9sz0oiUx1Yl6fCj09OyWOYDg");'></div>
+<div>
+<p class="font-bold text-zinc-900 dark:text-white">Emily Davis</p>
+<div class="flex items-center">
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.868 2.884c.321-.772 1.415-.772 1.736 0l1.83 4.421 4.647.675c.804.117 1.125 1.106.544 1.666l-3.363 3.278.794 4.628c.137.8-.702 1.418-1.423.994L10 15.545l-4.155 2.184c-.72.424-1.56-.194-1.423-.994l.794-4.628-3.363-3.278c-.58-.56-.26-1.549.544-1.666l4.647-.675L9.132 2.884z" fill-rule="evenodd"></path>
+</svg>
+<svg class="h-5 w-5 text-zinc-300 dark:text-zinc-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-.707-10.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586.293-.293z" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<p class="mt-4 text-zinc-600 dark:text-zinc-400">â€œWealthWise provided valuable insights and guidance in managing my investments. While I'm satisfied with their services, there's room for improvement in communication.â€</p>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">Contact Us</h2>
+<p class="mx-auto mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-400">Have questions or want to schedule a consultation? Fill out the form below and we'll get back to you shortly.</p>
+</div>
+<form id="contactForm" class="mx-auto mt-12 max-w-lg" data-endpoint="" novalidate>
+<div class="grid grid-cols-1 gap-y-6">
+<div>
+<label class="sr-only" for="name">Name</label>
+<input autocomplete="name" class="block w-full rounded-lg border-zinc-300 bg-zinc-50 px-4 py-3 text-zinc-900 shadow-sm focus:border-primary focus:ring-primary dark:border-zinc-700 dark:bg-background-dark dark:text-white" id="name" name="name" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="email">Email</label>
+<input autocomplete="email" class="block w-full rounded-lg border-zinc-300 bg-zinc-50 px-4 py-3 text-zinc-900 shadow-sm focus:border-primary focus:ring-primary dark:border-zinc-700 dark:bg-background-dark dark:text-white" id="email" name="email" placeholder="Your Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="message">Message</label>
+<textarea class="block w-full rounded-lg border-zinc-300 bg-zinc-50 px-4 py-3 text-zinc-900 shadow-sm focus:border-primary focus:ring-primary dark:border-zinc-700 dark:bg-background-dark dark:text-white" id="message" name="message" placeholder="Your Message" rows="4"></textarea>
+</div>
+<div>
+<button class="w-full rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105" type="submit">Submit</button>
+</div>
+</div>
+</form>
+<div id="formStatus" class="mx-auto mt-4 max-w-lg text-center text-sm text-zinc-600 dark:text-zinc-400"></div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark">
+<div class="mx-auto max-w-7xl px-4 py-12 text-center sm:px-6 lg:px-8">
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Â© 2023 WealthWise. All rights reserved. SEBI Registered Investment Advisor. Compliance Officer: Alex Turner. For grievances, contact us at support@wealthwise.com</p>
+</div>
+</footer>
+</div>
+</div>
+
+<script>
+  (function() {
+    const scrollToTarget = (target) => {
+      const el = document.querySelector(target);
+      if (!el) return;
+      const y = el.getBoundingClientRect().top + window.pageYOffset - 72;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (href && href.length > 1) {
+          e.preventDefault();
+          scrollToTarget(href);
+          const mobile = document.getElementById('mobileMenu');
+          if (mobile && !mobile.classList.contains('hidden')) mobile.classList.add('hidden');
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-scroll]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = btn.getAttribute('data-scroll');
+        if (target) scrollToTarget(target);
+      });
+    });
+
+    const mobileBtn = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (!name || !email || !message) {
+          if (statusEl) {
+            statusEl.textContent = 'Please fill out your name, email, and message.';
+            statusEl.classList.remove('text-emerald-600');
+            statusEl.classList.add('text-red-600');
+          }
+          return;
+        }
+
+        const endpoint = form.getAttribute('data-endpoint');
+        try {
+          if (endpoint) {
+            const resp = await fetch(endpoint, {
+              method: 'POST',
+              headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name, email, message })
+            });
+            if (resp.ok) {
+              if (statusEl) {
+                statusEl.textContent = 'Thanks! Your message has been sent.';
+                statusEl.classList.remove('text-red-600');
+                statusEl.classList.add('text-emerald-600');
+              }
+              form.reset();
+              return;
+            }
+          }
+        } catch (_) {}
+
+        const recipient = 'support@wealthwise.com';
+        const subject = encodeURIComponent('Website inquiry from ' + name);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+        if (statusEl) {
+          statusEl.textContent = 'Opening your email client... If nothing happens, email us at ' + recipient;
+          statusEl.classList.remove('text-red-600');
+          statusEl.classList.add('text-emerald-600');
+        }
+      });
+    }
+  })();
+</script></body></html>
